@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hsbc.gbb.insight.dao.UserMapper">
+    <resultMap type="com.hsbc.gbb.insight.model.UserModel" id="userMap">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="gender" column="gender"/>
+        <result property="birthday" column="birthday"/>
+        <result property="registerTime" column="register_time"/>
+        <result property="lastLoginTime" column="last_login_time"/>
+    </resultMap>
+    
+    <select id="queryObject" resultType="com.hsbc.gbb.insight.model.UserModel">
+		select
+			id,
+			username,
+			password,
+			gender,
+			birthday,
+			register_time,
+			last_login_time
+		from beeplatform_user
+		where id = #{id}
+	</select>
+</mapper>

@@ -1,1 +1,1 @@
-# AMH-GBB-Custom-Insight
+GBB Springboot Insight App
