@@ -15,8 +15,8 @@ import java.util.Date;
  * 参数格式校验工具类
  * Created by Jimersy Lee
  */
-public class ProjectVerifyUtils {
-    private static final Logger logger = LoggerFactory.getLogger(ProjectVerifyUtils.class);
+public class VerifyUtils {
+    private static final Logger logger = LoggerFactory.getLogger(VerifyUtils.class);
 
     /**
      * 正则表达式 数字+英文字母
